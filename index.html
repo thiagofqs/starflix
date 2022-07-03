@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starflix</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="page-title">STARFLIX</h1>
+        <p class="page-subtitle">Adicione seus conteúdos favoritos!</p>
+        <p class="page-subtitle">Para remover um conteúdo apenas digite o nome exato.</p>
+        <div class="form">
+            <input type="text" class="input" id="name" name="name" placeholder="Insira o nome do conteúdo">
+            <input type="text" class="input" id="url" name="url" placeholder="Insira o endereço da imagem">
+            <div class="form-buttons">
+                <button class="button" onClick="addContent()">Adicionar Conteúdo</button>
+                <button class="button" onClick="removeContent()">Remover Conteúdo</button>
+            </div>
+        </div>
+        <h2 id="text"></h2>
+    </section>
+    <figure id="contents"></figure>
+    <script src="script.js"></script>
+</body>
+</html>
